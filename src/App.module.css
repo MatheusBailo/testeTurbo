@@ -1,3 +1,86 @@
-.tittle{
-    color: red;
+img{
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 30px;
 }
+.s1 {
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .descricao {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .descricao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .descricao p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projetosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .projetoCard {
+    width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .projetoCard:hover {
+    transform: scale(1.03);
+  }
+  
+  .projetoCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .projetoCard h3 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .projetoCard p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .projetoCard a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
