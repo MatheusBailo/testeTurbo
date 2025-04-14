@@ -23,7 +23,7 @@ export const Menu = (props) => {
                 </div>
             </nav>
             
-            <footer className={style.footer}>
+            <footer className={`fixed-bottom ${style.footer}`}>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
                     <img width="30px" src={instagramImg} alt="Instagram" className="mx-2" />
                 </a>

@@ -2,7 +2,7 @@ import style from './App.module.css'
 import { cards } from './assets/mock/cards'
 import { Menu } from './components/menu'
 import { useState } from 'react'
-
+import foto1 from './assets/images/fotoHTML3.png'
 function App() {
   const defaultPhoneNumber = "5541999999999"
 
@@ -36,8 +36,6 @@ function App() {
        
         <section id='s1' className={style.s1}>
           <div className={style.perfil}>
-            
-
             <div className={style.descricao}>
               <h2>Sobre Mim</h2>
               <p>
@@ -53,35 +51,36 @@ function App() {
             {cards.map((item, index) => (
               <div key={index} className={style.crdzao}>
                 <p>{item.maiscoisa}</p>
-                <img src={item.img} alt={item.text} width={200} height={"auto"} />
+                <img className={style.imagem} src={item.img} alt={item.text} width={200} height={"auto"} />
               </div>
             ))}
           </div>
         </section>
 
      
-        <section id="projetos" className={style.projetos}>
+        <section id="s2" className={style.projetos}>
           <h2>Meus Projetos</h2>
           <div className={style.projetosContainer}>
             <div className={style.projetoCard}>
-              <img src="/assets/images/projeto1.jpg" alt="Projeto 1" />
-              <h3>trabalho-HTML3</h3>
-              <p>Descrição breve do projeto, tecnologia usada ou objetivo.</p>
+              <img src={foto1} alt="" />
+              <h3 className={style.sla}>trabalho-HTML3</h3>
+              <p>Ladin page de five night at fredds 2, primeiro trabalho feito pro mim e com meu amigo tiago</p>
               <a href="https://github.com/MatheusBailo/trabalho-HTML3" target="_blank" rel="noreferrer">
                 Ver no GitHub
               </a>
+              
             </div>
           </div>
         </section>
 
-        <section id='s2'>
+        {/* <section id='s2'>
           <h2>CONTATO</h2>
           <br />
           <input placeholder='Insira seu nome' type="text" id='name' name='name' value={formData.name} onChange={handleChange} required /><br /><br />
           <input placeholder='Insira seu email' type="email" id='email' name='email' value={formData.email} onChange={handleChange} required /><br /><br />
           <textarea placeholder='Insira mensagem' id='message' name='message' value={formData.message} onChange={handleChange} cols="30" rows="10" required></textarea>
           <button onClick={handleZap}>Enviar mensagem</button>
-        </section>
+        </section> */}
 
       </main>
     </>
