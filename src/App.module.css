@@ -3,40 +3,22 @@
 }
 
 .s1{
-    background: #020024;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 2%, rgba(158, 158, 158, 1) 49%, rgba(2, 0, 36, 1) 100%);
+    background-color: red;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 4vh; 
-    flex-direction: row;
-    height: 1000px;
-}
-
-.s2{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 4vh; 
-    flex-direction: row;
-    height: 1000px;
+    gap: 2vh;
 }
 
 .crdzao{
-    background-color: whitesmoke;
-    margin-top: 120px;
-    text-align: center;
+    background-color: blue;
 }
-
 
 @media (width >= 1000px){
     
 .s1{
-    background-color: var(--branco);
-    width: 100%;
-    height: 999px;
+    background-color: black;
 }
 
 }

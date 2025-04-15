@@ -1,48 +1,42 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import Contact from './Contact.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import Calcs from './calcs.jsx';
-import Media from './Media.jsx';
-import Imc from './Imc.jsx';
-
-
-
-// import { Analytics } from "@vercel/analytics/react"
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
+import './index.css'
+import { Analytics } from "@vercel/analytics/react"
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+import App from './App.jsx'
+import Contact from './Contact.jsx'
+import Calcs from './Calcs.jsx';
+import Requisicao from './Req.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:  <App />,
+    element: <App />,
   },
   {
     path: "/contact",
-    element: <Contact/>
+    element: <Contact/>,
   },
   {
     path: "/calcs",
-    element: <Calcs />,   
+    element: <Calcs/>,
   },
   {
-    path: "/media",
-    element: <Media />,   
-  },
-  {
-    path: "/IMC",
-    element: <Imc />
+    path: "/requisicao",
+    element: <Requisicao/>
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   {/* <Analytics/> */}
-   <RouterProvider router={router} />
+     <Analytics/>
+     <RouterProvider router={router} />
   </StrictMode>,
 )
